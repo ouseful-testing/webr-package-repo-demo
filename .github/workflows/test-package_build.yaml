@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    uses: ./.github/workflows/deploy-cran-repo.yml
+    uses: ./.github/workflows/deploy-cran-repo.yml@v2
     with:
       packages: local::./packages/M348_1.3.4.tar.gz
       webr-image: "ghcr.io/r-wasm/webr:main"
