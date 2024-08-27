@@ -13,5 +13,5 @@ jobs:
         urca
         plm
         formatR
-      webr-image: "ghcr.io/r-wasm/webr:main"
+      webr-image: "ghcr.io/r-wasm/webr:v0.3.3"
       compress: true
