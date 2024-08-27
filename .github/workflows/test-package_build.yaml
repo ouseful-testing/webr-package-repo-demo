@@ -1,4 +1,4 @@
-name: Build M348 test package
+name: Build M348 deployment packages
 
 on:
   workflow_dispatch:
