@@ -16,7 +16,7 @@ Although this currently errors for me:
 
 ![image](https://github.com/user-attachments/assets/63119f58-4739-405c-976d-828ae4331297)
 
-So we need to build the package for the correect version of R. The default version is set in `.github/workflows/test-package_build.yaml` eg as per`webr-image: "ghcr.io/r-wasm/webr:main"` which is currently at `"ghcr.io/r-wasm/webr:v0.4.1"`
+So we need to build the package for the correct version of R. The default version is set in `.github/workflows/test-package_build.yaml` eg as per`webr-image: "ghcr.io/r-wasm/webr:main"` which is currently at `"ghcr.io/r-wasm/webr:v0.4.1"`
 
 We should be able to set the path directly in the calling action? eg in `.github/workflows/deploy-cran-repo.yml`:
 
