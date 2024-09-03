@@ -28,6 +28,6 @@ webr-image:
 
 For the jupyterlite kernel, we need `"ghcr.io/r-wasm/webr:v0.3.3"`
 
-In use, when writing R code, the webR `library() function appears to pre-emptively try to install a missing package from the webR repo. Setting `options(webr_pkg_repos= "https://ouseful-demos.github.io/jupyterlite-m348-demo/repo/")` should force install.packages() and the library() function to pull from this custom repo directly.
+In use, when writing R code, the webR `library()` function appears to pre-emptively try to install a missing package from the webR repo. Setting `options(webr_pkg_repos= "https://ouseful-demos.github.io/jupyterlite-m348-demo/repo/")` should force install.packages() and the library() function to pull from this custom repo directly.
 
 If we build our own webR release, we can presumably set that path via the `webr-image.default` value in the action YAML, although I'm not sure what URL the actual resource needs to be on?
