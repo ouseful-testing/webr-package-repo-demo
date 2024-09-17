@@ -9,6 +9,7 @@ jobs:
     with:
       packages: |
         local::./packages/M348_1.3.4.tar.gz
+        local::./packages/tseries_0.10-53.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
         lattice
         nlme
@@ -20,7 +21,6 @@ jobs:
         TTR
         curl
         quantmod
-        local::./packages/tseries_0.10-53.tar.gz
         plm
         formatR
         Formula
