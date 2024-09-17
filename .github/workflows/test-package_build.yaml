@@ -11,7 +11,6 @@ jobs:
         local::./packages/M348_1.3.4.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
         local::./packages/quantmod_0.4.26.1.tar.gz
-        local::./packages/tseries_0.10-54.tar.gz
         lattice
         nlme
         urca
@@ -20,7 +19,6 @@ jobs:
         jsonlite
         xts
         TTR
-        local::./packages/curl_5.0.1.tar.gz
         plm
         formatR
         Formula
@@ -30,7 +28,6 @@ jobs:
         collapse
         generics
         maxLik
-        quadprog
         digest
         miscTools
         rbibutils
