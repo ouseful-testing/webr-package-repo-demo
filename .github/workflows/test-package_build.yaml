@@ -9,7 +9,7 @@ jobs:
     with:
       packages: |
         local::./packages/M348_1.3.4.tar.gz
-        local::./packages/tseries_0.10-53.tar.gz
+        local::./packages/tseries_0.10-54.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
         lattice
         nlme
@@ -19,7 +19,7 @@ jobs:
         jsonlite
         xts
         TTR
-        curl
+        local::./packages/curl_5.0.1.tar.gz
         quantmod
         plm
         formatR
@@ -29,6 +29,7 @@ jobs:
         Rcpp
         collapse
         generics
+        maxLik
         quadprog
         digest
         miscTools
