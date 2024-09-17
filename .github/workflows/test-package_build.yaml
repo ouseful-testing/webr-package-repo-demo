@@ -10,6 +10,7 @@ jobs:
       packages: |
         local::./packages/M348_1.3.4.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
+        github::SebKrantz/collapse@no_parallel_simd
         lattice
         nlme
         urca
