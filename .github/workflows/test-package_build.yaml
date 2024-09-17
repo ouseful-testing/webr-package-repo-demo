@@ -11,7 +11,7 @@ jobs:
         local::./packages/M348_1.3.4.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
         local::./packages/quantmod_0.4.26.1.tar.gz
-        local::./collapse-hack.tar.gz
+        local::./packages/collapse-hack.tar.gz
         lattice
         nlme
         urca
