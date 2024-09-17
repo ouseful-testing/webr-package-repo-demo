@@ -21,5 +21,14 @@ jobs:
         Formula
         bdsmatrix
         sandwich
+        jsonlite
+        generics
+        quadprog
+        xts
+        TTR
+        digest
+        miscTools
+        rbibutils
+        quantmod
       webr-image: "ghcr.io/r-wasm/webr:v0.3.3"
       compress: false
