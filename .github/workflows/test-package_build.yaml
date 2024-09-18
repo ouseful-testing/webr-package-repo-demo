@@ -10,7 +10,6 @@ jobs:
       packages: |
         local::./packages/M348_1.3.4.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
-        local::./packages/collapse_2.0.15.tar.gz
         lattice
         nlme
         urca
@@ -21,6 +20,7 @@ jobs:
         xts
         TTR
         plm
+        collapse
         formatR
         Formula
         bdsmatrix
