@@ -6,7 +6,7 @@ This demo includes several R packages ujsing in the OU module M348 in the `packa
 
 The package can be found at:
 
-https://ouseful-testing.github.io/webr-package-repo-demo/src/contrib/bin/emscripten/contrib/4.4/PACKAGES.rds
+[https://ouseful-testing.github.io/webr-package-repo-demo/src/contrib/bin/emscripten/contrib/4.4/PACKAGES.rds](https://ouseful-testing.github.io/webr-package-repo-demo/src/bin/emscripten/contrib/4.3/PACKAGES.rds) (link downlads RDS file)
 
 Install as:
 
