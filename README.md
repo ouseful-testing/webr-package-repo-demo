@@ -2,7 +2,7 @@
 Can we build and serve webr packages?
 
 
-This demo includes an R package in the `packages` directory that is compiled to a Wasm package by the Github Action, then published to a CRAN style repo.
+This demo includes several R packages ujsing in the OU module M348 in the `packages` directory that are compiled to Wasm packages by the Github Action, then published to a CRAN style repo.
 
 The package can be found at:
 
