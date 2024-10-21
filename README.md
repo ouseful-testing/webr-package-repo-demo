@@ -4,6 +4,19 @@ Can we build and serve webr packages?
 
 This demo includes several R packages used in the OU module M348 in the `packages` directory that are compiled to Wasm packages by the Github Action, then published to a CRAN style repo.
 
+## Adding and Building New Packages
+
+Add references to packages that need to be built to the `.github/workflows/test-package_build.yml` file:
+
+- if package source is provided (`.tar.gz`), put the `.tar.gz` source file in `./packages` and refer to as `local::./packages/PACKAGE.tar.gz` in the `.yml` file
+- for packages on CRAN, just give the package name (e.g. `jsonlite`)
+
+In the `.github/workflows/test-package_build.yml` file:, specify the R version via the `webr-image:` parameter (eg `webr-image:"ghcr.io/r-wasm/webr:v0.3.3"`).
+
+Build using the __Build M348 deployment packages__ action. The files are published as a repo via GitHub pages and also uploaded as an artefact to the action run report page (the artefact download link expires after a certain number of days.)
+
+## Accessing the Repo
+
 The packages manifest can be found at:
 
 [https://ouseful-testing.github.io/webr-package-repo-demo/src/bin/emscripten/contrib/4.3/PACKAGES.rds](https://ouseful-testing.github.io/webr-package-repo-demo/src/bin/emscripten/contrib/4.3/PACKAGES.rds) (link downlads RDS file)
