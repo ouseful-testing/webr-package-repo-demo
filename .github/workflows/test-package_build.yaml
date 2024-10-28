@@ -8,7 +8,8 @@ jobs:
     uses: ./.github/workflows/deploy-cran-repo.yml
     with:
       packages: |
-        local::./packages/M348_1.3.6.3.tar.gz
+        local::./packages/JupyterLiteUtils_0.0.1.tar.gz
+        local::./packages/M348_1.3.6.4.tar.gz
         local::./packages/MASS_7.3-58.3.tar.gz
         lattice
         nlme
