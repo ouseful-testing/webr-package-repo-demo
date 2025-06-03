@@ -35,4 +35,4 @@ jobs:
         Rdpack
         plm
       webr-image: "ghcr.io/r-wasm/webr:v0.4.3"
-      compress: false
+      compress: true
