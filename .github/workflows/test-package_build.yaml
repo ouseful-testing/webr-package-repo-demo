@@ -14,22 +14,22 @@ jobs:
         lattice
         nlme
         urca
+        zoo
         lmtest
         local::./packages/quantmod_0.4.26.1.tar.gz
-        zoo
         jsonlite
         xts
         TTR
+        Rcpp
         collapse
         formatR
         Formula
         bdsmatrix
         sandwich
-        Rcpp
         generics
-        maxLik
         digest
         miscTools
+        maxLik
         rbibutils
         Rdpack
         plm
