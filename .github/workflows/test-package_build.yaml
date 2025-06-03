@@ -20,7 +20,6 @@ jobs:
         jsonlite
         xts
         TTR
-        plm
         collapse
         formatR
         Formula
@@ -33,5 +32,6 @@ jobs:
         miscTools
         rbibutils
         Rdpack
+        plm
       webr-image: "ghcr.io/r-wasm/webr:v0.3.3"
       compress: false
