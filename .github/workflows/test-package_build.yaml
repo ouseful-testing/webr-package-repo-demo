@@ -36,3 +36,9 @@ jobs:
         plm
       webr-image: "ghcr.io/r-wasm/webr:v0.4.3"
       compress: true
+    permissions:
+      # To download GitHub Packages within action
+      repository-projects: read
+      # For publishing to pages environment
+      pages: write
+      id-token: write
