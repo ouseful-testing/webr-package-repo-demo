@@ -1,12 +1,25 @@
-
 name: Build M348 deployment packages
-
 on:
   workflow_dispatch:
+    inputs:
+      webr-image:
+        description: 'Select WebR image version'
+        required: true
+        default: 'ghcr.io/r-wasm/webr:v0.4.3'
+        type: choice
+        options:
+          - 'ghcr.io/r-wasm/webr:v0.3.3'
+          - 'ghcr.io/r-wasm/webr:v0.4.3'
+          - 'ghcr.io/r-wasm/webr:v0.5.0'
+      compress:
+        description: 'Enable compression'
+        required: true
+        default: true
+        type: boolean
 
 jobs:
   build:
-    uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v2 #./.github/workflows/deploy-cran-repo.yml
+    uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v2
     with:
       packages: |
         local::./packages/JupyterLiteUtils_0.0.1.tar.gz
@@ -34,8 +47,8 @@ jobs:
         rbibutils
         Rdpack
         plm
-      webr-image: "ghcr.io/r-wasm/webr:v0.4.3"
-      compress: true
+      webr-image: ${{ inputs.webr-image }}
+      compress: ${{ inputs.compress }}
     permissions:
       # To download GitHub Packages within action
       repository-projects: read
