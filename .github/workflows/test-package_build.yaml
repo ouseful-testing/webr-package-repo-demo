@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v1 #./.github/workflows/deploy-cran-repo.yml
+    uses: r-wasm/actions/.github/workflows/deploy-cran-repo.yml@v2 #./.github/workflows/deploy-cran-repo.yml
     with:
       packages: |
         local::./packages/JupyterLiteUtils_0.0.1.tar.gz
