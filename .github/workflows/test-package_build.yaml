@@ -10,7 +10,7 @@ on:
         options:
           - 'ghcr.io/r-wasm/webr:v0.3.3'
           - 'ghcr.io/r-wasm/webr:v0.4.3'
-          - 'ghcr.io/r-wasm/webr:v0.5.0'
+          - 'ghcr.io/r-wasm/webr:v0.5.1'
       compress:
         description: 'Enable compression'
         required: true
