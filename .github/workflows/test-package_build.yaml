@@ -5,12 +5,12 @@ on:
       webr-image:
         description: 'Select WebR image version'
         required: true
-        default: 'ghcr.io/r-wasm/webr:v0.4.3'
+        default: 'ghcr.io/r-wasm/webr:v0.4.4'
         type: choice
         options:
           - 'ghcr.io/r-wasm/webr:v0.3.3'
-          - 'ghcr.io/r-wasm/webr:v0.4.3'
-          - 'ghcr.io/r-wasm/webr:v0.5.1'
+          - 'ghcr.io/r-wasm/webr:v0.4.4'
+          - 'ghcr.io/r-wasm/webr:v0.5.2'
       compress:
         description: 'Enable compression'
         required: true
