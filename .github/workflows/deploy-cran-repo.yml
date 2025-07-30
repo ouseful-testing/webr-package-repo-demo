@@ -80,8 +80,15 @@ jobs:
           webr-image: ${{ inputs.webr-image }}
           compress: ${{ inputs.compress }}
 
+      #- name: Upload packages CRAN-style distribution repo
+      #  uses: actions/upload-artifact@v3
+      #  with:
+      #    name: packages-cran-style-distribution
+      #    path: .
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
