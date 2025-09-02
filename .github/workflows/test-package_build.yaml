@@ -11,6 +11,7 @@ on:
           - 'ghcr.io/r-wasm/webr:v0.3.3'
           - 'ghcr.io/r-wasm/webr:v0.4.4'
           - 'ghcr.io/r-wasm/webr:v0.5.4'
+          - 'ghcr.io/r-wasm/webr:v0.5.5'
       compress:
         description: 'Enable compression'
         required: true
